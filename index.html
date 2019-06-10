@@ -42,45 +42,45 @@
     </button>
 
     <nav class="nav__menu">
-      <div class="nav-item ">
-        <a class="item-color" href="">Repuestos</a>
-      </div>
-      <div class="nav-item">
-        <a class="item-color" href="#about">Nosotros</a>
-      </div>
-      <div class="nav-item">
-        <a class="item-color" href="#products">Productos</a>
-      </div>
-      <div class="nav-item ">
-        <a class="item-color" href="#contact">Contacto</a>
-      </div>
-      <div class="nav-item ">
-        <i class="fa fa-cart-arrow-down" aria-hidden="true"></i>
-      </div>
       <div class="nav-item">
         <div class="search-box">
           <div class="search-icon">
             <i class="fa fa-search search-icon"></i>
           </div>
           <form action="" class="search-form">
-            <input type="text" placeholder="Buscar" id="search" autocomplete="on">
+            <input type="text" placeholder="Buscar" id="search" autocomplete="on" class="search">
           </form>
-          <svg class="search-border" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/"
+          <!-- <svg class="search-border" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/"
             x="0px" y="0px" viewBox="0 0 671 111" style="enable-background:new 0 0 671 111;" xml:space="preserve">
-            <path class="border" d="M335.5,108.5h-280c-29.3,0-53-23.7-53-53v0c0-29.3,23.7-53,53-53h280" />
-            <path class="border" d="M335.5,108.5h280c29.3,0,53-23.7,53-53v0c0-29.3-23.7-53-53-53h-280" />
-          </svg>
+            <path class="border color-border " d="M335.5,108.5h-280c-29.3,0-53-23.7-53-53v0c0-29.3,23.7-53,53-53h280" />
+            <path class="border color-border" d="M335.5,108.5h280c29.3,0,53-23.7,53-53v0c0-29.3-23.7-53-53-53h-280" />
+          </svg> -->
           <div class="go-icon">
             <i class="fa fa-arrow-right"></i>
           </div>
         </div>
+      </div>
+      <div class="nav-item ">
+        <a class="item-color" href="">Repuestos</a>
+      </div>
+      <div class="nav-item">
+        <a class="item-color" href="#products">Productos</a>
+      </div>
+      <div class="nav-item">
+        <a class="item-color" href="#recomendation">Recomendados</a>
+      </div>
+      <div class="nav-item ">
+        <a class="item-color" href="#contact">Contacto</a>
+      </div>
+      <div class="nav-item icon-plus ">
+        <i class="fa fa-cart-plus" aria-hidden="true"></i>
       </div>
     </nav>
   </header>
 
   <div class="btn-whatsapp">
     <a href="https://api.whatsapp.com/send?phone=51944570043" target="_blank">
-      <img src="assets/img/what.svg" alt="">
+      <i aria-hidden="true" class="fa fa-whatsapp"></i>
     </a>
   </div>
   <!-- end of navbar-->
@@ -137,7 +137,7 @@
       </div>
     </div>
   </section> -->
-
+  <!-- FIN BANNER -->
   <section class='products-slider'>
     <div class="ct-header ct-header--slider ct-slick-custom-dots" id="home">
       <div class="ct-slick-homepage" data-arrows="true" data-autoplay="false">
@@ -192,15 +192,12 @@
   </section>
 
 
-
-
-
   <section class="products ">
     <h2 class="title-products">Nuestros Productos</h2>
     <div class="card-group">
       <div class="card-product">
         <div class="card-image">
-          <img src="assets/img/amor.jpg">
+          <img src="assets/img/amort.jpg">
         </div>
         <div class="group-info">
           <div class="title-card">
@@ -221,7 +218,7 @@
 
       <div class="card-product">
         <div class="card-image">
-          <img src="assets/img/freno.jpg">
+          <img src="assets/img/bomba.jpg">
         </div>
         <div class="group-info">
           <div class="title-card">
@@ -281,10 +278,126 @@
       </div>
     </div>
     <div class="btn-see">
-      <button type="button" class="btn-primary site-button btn-block ">Ver más </button>
+      <button type="button" class="btn-primary site-button btn-block">Ver más </button>
     </div>
   </section>
 
+
+
+
+
+  <section id="recomendation" class="recomendation ">
+    <div class="img-back">
+      <img src="assets/img/car.svg">
+    </div>
+    <h2 class="title-recommended">Recomendados</h2>
+    <div class='carrusel-slider container'>
+      <div class='multiple-items'>
+        <div class="card-product">
+          <div class="card-image-two">
+            <img src="assets/img/volantes.jpg">
+          </div>
+          <div class="group-info">
+            <div class="title-card">
+              <a href="">
+                <h5>Amortiguador</h5>
+              </a>
+            </div>
+            <div class="price">
+              <div>
+                <h6>$ 300</h6>
+              </div>
+              <div>
+                <i class="fa fa-cart-plus" aria-hidden="true"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card-product">
+          <div class="card-image-two">
+            <img src="assets/img/caucho.png">
+          </div>
+          <div class="group-info">
+            <div class="title-card">
+              <a href="">
+                <h5> Bomba de Frenos</h5>
+              </a>
+            </div>
+            <div class="price">
+              <div>
+                <h6>$ 400</h6>
+              </div>
+              <div>
+                <i class="fa fa-cart-plus" aria-hidden="true"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="products" class="card-product">
+          <div class="card-image-two">
+            <img src="assets/img/volante.jpg">
+          </div>
+          <div class="group-info">
+            <div class="title-card">
+              <a href="">
+                <h5>Volante</h5>
+              </a>
+            </div>
+            <div class="price">
+              <div>
+                <h6>$ 9900</h6>
+              </div>
+              <div>
+                <i class="fa fa-cart-plus" aria-hidden="true"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card-product">
+          <div class="card-image-two">
+            <img src="assets/img/product1.png">
+          </div>
+          <div class="group-info">
+            <div class="title-card">
+              <a href="">
+                <h5>Repuestos</h5>
+              </a>
+            </div>
+            <div class="price">
+              <div>
+                <h6>$ 50000</h6>
+              </div>
+              <div>
+                <i class="fa fa-cart-plus" aria-hidden="true"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card-product">
+          <div class="card-image-two">
+            <img src="assets/img/product1.png">
+          </div>
+          <div class="group-info">
+            <div class="title-card">
+              <a href="">
+                <h5>Repuestos</h5>
+              </a>
+            </div>
+            <div class="price">
+              <div>
+                <h6>$ 50000</h6>
+              </div>
+              <div>
+                <i class="fa fa-cart-plus" aria-hidden="true"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
 
   <section id="about" class="about">
     <div class="sections_group ">
@@ -295,12 +408,9 @@
               <div class="mcb-wrap-inner">
                 <div class="column mcb-column one column_column">
                   <div class="column_attr clearfix">
-                    <h2 style="padding-left: 90px">Somos la solución de tu automóvil</h2>
-                    <p>
-                      Encuentra todos los repuestos que necesites para tu automóvil de las diferentes marcas y modelos, enterate de sus ofertas
-                      y promociones.
-                    </p>
-                    <button type="button" class="btn-primary site-button btn-block" title="READ MORE">Leer más </button>
+                    <h2 style="padding-left: 90px"> Somos la
+                      <span class="word-color"> solución </span> de tu automóvil</h2>
+                    <button type="button" class="btn-primary request site-button btn-block" title="READ MORE">Leer más </button>
                   </div>
                 </div>
               </div>
@@ -358,58 +468,6 @@
       </div>
     </div>
   </section>
-
-
-  <section class="recomendation ">
-    <div class="img-back">
-      <img src="assets/img/car.svg">
-    </div>
-    <h2 class="title-recommended">Recomendados</h2>
-    <div class='carrusel-slider container'>
-      <div class='multiple-items'>
-        <div class="card-clients ">
-          <div class='item'>
-            <img src="assets/img/volante.jpg">
-            <div class="group-reco">
-              <p>Volante</p>
-            </div>
-          </div>
-        </div>
-        <div class="card-clients">
-          <div class='item'>
-            <img src="assets/img/product1.png">
-            <p>Repuestos</p>
-          </div>
-        </div>
-        <div class="card-clients">
-          <div class='item'>
-            <img class='img-responsive' src='assets/img/product2.png'>
-            <p>Volante</p>
-            <!-- <div class="btn-see">
-              <button type="button" class="btn-primary site-button btn-block ">Ver más </button>
-            </div> -->
-          </div>
-        </div>
-        <div class="card-clients">
-          <div class='item'>
-            <img src="assets/img/freno.jpg">
-            <p>Bomba de Frenos</p>
-          </div>
-        </div>
-        <div class="card-clients">
-          <div class='item'>
-            <img class='img-responsive' src='assets/img/caucho.png'>
-            <p>Caucho</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-
-
-
-
   <section id="contact" class="contact">
     <div class="row">
       <div class="col-md-4">

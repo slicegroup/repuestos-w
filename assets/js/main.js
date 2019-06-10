@@ -1,13 +1,17 @@
 
 $(window).scroll(function () {
-  if ($(this).scrollTop() >= 40) {
+  if ($(this).scrollTop() >= 60) {
     $(".navbar-me").addClass("fixed-me");
-    $(".logo").addClass('other-logo').attr("src", "assets/img/logo2.svg");
+    $(".logo").addClass('other-logo').attr("src", "assets/img/footer.svg");
     $('.item-color').addClass('fixed-color');
+    $('.border').addClass('color-border');
+    $('.search').addClass('color-word');
+    $('.search').addClass('.search::placeholder');
   } else {
     $(".navbar-me").removeClass("fixed-me");
     $(".logo").removeClass('other-logo').attr("src", "assets/img/logo.svg");
     $('.item-color').removeClass('fixed-color');
+    $('.search').removeClass('.search::placeholder');
   }
 });
 

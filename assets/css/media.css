@@ -17,6 +17,50 @@
   .responsive-menu-btn>svg.close{
     fill: #000;
   }
+  .two-fifth.mcb-wrap{
+    width: auto;
+  }
+
+  .three-fifth.mcb-wrap{
+    width: auto;
+  }
+
+  .mcb-wrap-inner {
+    display: inline-grid;
+  }
+
+  .father-flex{
+    display: flex;
+  }
+
+  .father-flex2 {
+    justify-content: flex-end;
+  }
+
+  .slider-inner{
+    text-align: center;
+    padding: 30px;
+  }
+
+  .slick-next.slick-arrow{
+    display: none!important;
+  }
+
+  .slick-prev.slick-arrow{
+    display: none!important;
+  }
+
+  #search{
+    color: black;
+  }
+
+  .nav__menu{
+   top: 99px;
+  }
+
+  .products {
+    padding: 100px 6% 80px;
+  }
 }
 
 @media screen and (min-width: 768px) and (max-width: 991px){
