@@ -32,7 +32,6 @@ button:focus {
   outline: none;
 }
 
-
 html {
   scroll-behavior: smooth;
 }
@@ -156,7 +155,7 @@ button:focus {
 }
 .search-box {
   position: relative;
-  width: 530px;
+  width:430px;
   height: 60px;
   border-radius: 120px;
   margin: 0 auto;
@@ -252,7 +251,7 @@ button:focus {
   position: absolute;
   top: 0;
   left: 0;
-  width: 530px;
+  width: 445px;
   height: 90%;
   border-radius: 30px;
   border: none;
@@ -282,6 +281,10 @@ button:focus {
         color: white;
         font-size: 13px;
     }
+}
+
+.slider-inner{
+    padding: 80px;
 }
 
 .clearfix:before, .clearfix:after, .row:before, .row:after {
@@ -931,7 +934,7 @@ label {
         background: none;
         border-right: none;
         position: static;
-        margin-left: auto;
+        margin-left:15px;
         height: auto;
         transform: translate(0, 0);
     }
@@ -1032,13 +1035,17 @@ label {
 
 .wrap.mcb-wrap.three-fifth.valign-middle.clearfix{
     padding: 210px 8% 80px;
-    background-image: url('../img/team\ \(1\).svg')!important;
-    background-repeat: no-repeat;
-    background-position: right 393px top -72%;
     height: 700px;
     background-color: #fff;
+     position: relative;
 }
 
+.team{
+    position: absolute;
+    z-index: -1;
+    bottom: 45%;
+    right: 42%;
+}
 .column_attr p{
     font-size: 18px!important;
     padding-top: 20px;
@@ -1053,7 +1060,8 @@ h2{
     letter-spacing: 0px;
     background: url('../img/line.png') no-repeat left 25px!important;
     padding-left: 90px;
-    margin-top: -15%;
+    margin-top: -12%;
+    margin-bottom: 5%;
 }
 
 .color-word{
@@ -1276,6 +1284,7 @@ img.scale-with-grid, #Content img {
   object-fit: contain;
   height: 355px;
   width: 275px;
+  margin-left: 11px;
 }
 
 .card-image-two img{
@@ -1290,17 +1299,9 @@ img.scale-with-grid, #Content img {
     transition: .5s;
 }
 
-
-.title-card {
-    -webkit-transition: color .3s ease-in-out;
-    font-size: .88em;
-    margin-top: 5%;
-    transition: color .3s ease-in-out;
-    cursor: pointer;
-}
-
 .card-product{
-  margin: 2rem;
+  width: 275px!important;
+  z-index: 99;
 }
 
 .card-image:hover{
@@ -1312,7 +1313,6 @@ img.scale-with-grid, #Content img {
     transform: translateY(-2px);
     cursor: pointer;
     transition: .5s;
-    
 }
 
 .card-image-two:hover{
@@ -1376,7 +1376,7 @@ a{
 .title-card {
     -webkit-transition: color .3s ease-in-out;
     font-size: 20px;
-    margin-top: 30px;
+    margin-top: 5%;
     transition: color .3s ease-in-out;
     transition: .5s;
 
@@ -1427,7 +1427,7 @@ h6{
 .recomendation{
   padding: 210px 8% 80px;
   position: relative;
-  background: #f1f2f6;
+  background: rgba(195, 207, 255, 0.05);
 }
 
 .title-recommended{
@@ -1504,23 +1504,30 @@ p{
 }
 
 .img-back img{
-  width: 360px;
+    width: 750px;
     position: absolute;
-    left: 105rem;
-    top: 45%;
+    left: 85rem;
+    bottom: 73%;
+}
+
+.img-footer img{
+    width: 100%;
+    position: absolute;
+    margin-top: -8%;
+    z-index: -99;
 }
 
 .contact{
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  flex-direction: column;
-  padding: 100px;
+  padding: 50px;
   position: relative;
+  background: rgba(195, 207, 255, 0.05);
 }
 
 .contact img{
-    width: 53%;
+    width: 30%;
     margin-bottom: 4%;
 }
 
@@ -1528,18 +1535,6 @@ p{
     font-weight: 900;
 }
 
-.send{
-    opacity: .3;
-    position: absolute;
-    top: 20%;
-    left: 55%;
-}
-
-.send img{
-    width: 150px;
-    position: relative;
-
-}
 
 .fa{
     font-size: 20px;
@@ -1555,52 +1550,53 @@ p{
     padding: 1%;
 }
 
-.gear{
-    opacity: .3;
-}
-
-.gear img{
-  position: absolute; 
-  top: 67%;
-  width: 285px;
-}
 
 .text-footer p{
     font-size: 15px;
-    margin-bottom: 4%;
+    padding-bottom: 10px;
+    font-weight: 400;
+}
+
+.more-wiew a{
+    color: #D52A3F;
     font-weight: 600;
+    transition: .5s;
+}
+
+.more-wiew a:hover{
+    text-decoration: none;
+    color: #000;
+    transition: .5s;
 }
 
 .number{
-font-size: 20px!important;
-font-weight: 700;
+font-weight: 400;
 }
 
 .text-footer h4{
     font-size: 23px;
     font-weight: 600;
-    margin-bottom: 8%;
-}
-
-.color{
-    color:#d52a3f;
 }
 
 .redes{
     display: flex;
     justify-content: start;
     align-items: baseline;
+    margin: 0px 0px 15px;
 }
 
 .copy{
-  display: flex;
-  justify-content: center;
   align-items: center;
-  padding: 18px;
+  background: #D52A3F;
+  color: #fff;
+  display: flex;
   font-size: 15px;
   font-weight: bold;
-    background: #d52a3f;
-    color: #fff;
+  justify-content:center;
+  padding: 18px;
+  height: 60px;
+  position: absolute;
+  width: 100%;
 }
 
 .copy p{
@@ -1611,5 +1607,14 @@ font-weight: 700;
 .copy img{
   width: 5rem;
  margin-top: -2%;
+}
+
+.group-one{
+ width: 40%;
+ padding-bottom: 5%;
+}
+
+.group-two{
+  width: 40%;
 }
 
