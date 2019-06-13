@@ -1,5 +1,9 @@
 
 @media screen and (min-width: 0px) and (max-width: 767px) {
+  .logo {
+    padding-top: 0px;
+  }
+
   .fixed-me{
     background: white;
   }
@@ -65,10 +69,86 @@
   .products {
     padding: 100px 6% 80px;
   }
+
+  form label{
+    width: auto;
+  }
+
+  .contact-container h3{
+    text-align: center;
+    padding-top: 25%;
+    color: #fff;
+    font-size: 23px;
+    background: #ccc;
+  }
+
+  .contact-container {
+    height: auto;
+  }
+
+  .form-contact{
+    top: 0;
+  }
+  .contact{
+    display: block;
+  }
+
+  .background-sorry img{
+    display: none;
+  }
+
+  .contact img {
+    width: 60%;
+    margin-bottom: 10%;
+  }
+
+  .group-one{
+    width: auto;
+  }
+
+  .group-two{
+    width: auto;
+  }
+  .text-footer h4 {
+    margin-bottom: 10%;
+  }
+
+  .copy p{
+    text-align: center;
+  }
 }
 
 @media screen and (min-width: 768px) and (max-width: 991px){
+ .search-box{
+    width: 165px;
+  }
 
+    #search{
+    width: 165px;
+
+  }
+
+  .logo {
+    padding-top: 0px;
+  }
+
+  .fixed-me{
+    background: white;
+  }
+
+  .responsive-menu-btn>svg.open {
+    width: 80%;
+    height: auto;
+    fill: black;
+  }
+
+  .nav-item a{
+    color: black;
+  }
+
+  .responsive-menu-btn>svg.close{
+    fill: #000;
+  }
 
 }
 
@@ -84,5 +164,5 @@
 
 @media screen and (min-width: 1024px) and (max-width: 1366px) {
 
-  
+ 
 }

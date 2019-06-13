@@ -251,9 +251,8 @@ button:focus {
   position: absolute;
   top: 0;
   left: 0;
-  width: 445px;
+  width: 415px;
   height: 90%;
-  border-radius: 30px;
   border: none;
   background: #fff;
   padding: 0 68px 0 68px;
@@ -1587,7 +1586,7 @@ font-weight: 400;
 
 .copy{
   align-items: center;
-  background: #D52A3F;
+  background: #333333;
   color: #fff;
   display: flex;
   font-size: 15px;
@@ -1616,5 +1615,17 @@ font-weight: 400;
 
 .group-two{
   width: 40%;
+}
+
+.carousel-products >.slick-prev{
+    left: -55px!important;
+}
+
+.carousel-products > .slick-next {
+    right: -55px;
+}
+
+.carousel-products > .slick-prev:before, .slick-next:before, .slick-prev:after, .slick-next:after {
+    background: #d52a3f!important;
 }
 

@@ -36,13 +36,13 @@ $(".single-item-three").slick({
 });
 
 $('.multiple-items').slick({
-    autoplay: false,
+    autoplay: true,
     autoplaySpeed: 3000,
     speed: 500,
     infinite: true,
     slidesToShow: 4,
     slidesToScroll: 1,
-    arrows: false,
+    arrows: true,
     dots: true,
     responsive: [
         {
