@@ -194,7 +194,7 @@
   <section class="products  " id="products">
     <h2 class="title-products">Nuestros Productos</h2>
     <div class="card-group ">
-      <div class="card-product wow fadeInDown  ">
+      <div class="card-product wow fadeInDown" style="visibility: visible; animation-name: fadeInDown;">
         <div class="card-image">
           <img src="assets/img/amort.jpg">
         </div>
@@ -205,9 +205,15 @@
             </a>
           </div>
           <div class="price">
-            <div>
-              <h6>$ 300</h6>
-              <h6>$ 300</h6>
+            <div class="display-flex">
+              <div>
+                <span style="text-decoration:line-through;">
+                  <h6>$ 300</h6>
+                </span>
+              </div>
+              <div>
+                <h6>$ 300</h6>
+              </div>
             </div>
             <div>
               <i class="fa fa-cart-plus" aria-hidden="true"></i>
@@ -291,9 +297,9 @@
     <h2 class="title-recommended">Recomendados</h2>
     <div class='carrusel-slider container'>
       <div class='multiple-items carousel-products'>
-        <div class="card-product wow fadeIn">
-          <div class="card-image-two">
-            <img src="assets/img/volantes.jpg">
+        <div class="card-product wow fadeInDown" style="visibility: visible; animation-name: fadeInDown;">
+          <div class="card-image">
+            <img src="assets/img/amort.jpg">
           </div>
           <div class="group-info">
             <div class="title-card">
@@ -302,8 +308,15 @@
               </a>
             </div>
             <div class="price">
-              <div>
-                <h6>$ 300</h6>
+              <div class="display-flex">
+                <div>
+                  <span style="text-decoration:line-through;">
+                    <h6>$ 300</h6>
+                  </span>
+                </div>
+                <div>
+                  <h6>$ 300</h6>
+                </div>
               </div>
               <div>
                 <i class="fa fa-cart-plus" aria-hidden="true"></i>

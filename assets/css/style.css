@@ -1355,7 +1355,7 @@ img.scale-with-grid, #Content img {
 .price{
     display: flex;
     justify-content: space-around;
-    width: 50%;
+        width: 73%;
 }
 
 .icon-plus > .fa.fa-cart-plus{
@@ -1439,6 +1439,12 @@ h6{
 .title-recommended{
   margin-bottom: 5%;
   margin-top: 0%;
+}
+
+.display-flex{
+  display: flex;
+  justify-content: inherit;
+  width: 65%;
 }
 
 .card-clients{
