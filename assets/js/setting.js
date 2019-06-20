@@ -22,6 +22,8 @@ $(".single-item-two").slick({
     fade: true,
     arrows: true,
     dots: false,
+    slidesToShow: 6,
+    slidesToScroll: 1,
 });
 
 $(".single-item-three").slick({
@@ -36,14 +38,42 @@ $(".single-item-three").slick({
 });
 
 $('.multiple-items').slick({
-    autoplay: true,
+    autoplay: false,
     autoplaySpeed: 3000,
     speed: 500,
     infinite: true,
-    slidesToShow: 4,
+    slidesToShow: 3,
     slidesToScroll: 1,
     arrows: true,
     dots: true,
+    responsive: [
+        {
+            breakpoint: 700,
+            settings: {
+                arrows: false,
+                slidesToShow: 1,
+                slidesToScroll: 1
+            }
+        },
+        {
+            breakpoint: 1024,
+            settings: {
+                slidesToShow: 3,
+                slidesToScroll: 3,
+            }
+        }
+    ]
+});
+
+$('.multiple-items-two').slick({
+    autoplay: false,
+    autoplaySpeed: 3000,
+    speed: 500,
+    infinite: true,
+    slidesToShow: 6,
+    slidesToScroll: 1,
+    arrows: false,
+    dots: false,
     responsive: [
         {
             breakpoint: 700,

@@ -82,7 +82,7 @@
 .slick-dots {
   position: absolute;
   list-style: none;
-  bottom: -17%;
+  bottom: 0;
   display: block;
   text-align: center;
   padding: 0;
