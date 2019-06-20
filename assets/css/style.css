@@ -131,6 +131,10 @@ i.fa.fa-cart-arrow-down:hover {
     color: #000!important;
 }
 
+button{
+    font-family: 'lato',sans-serif;
+}
+
 button:focus {
     outline: none!important;
 }
@@ -1370,7 +1374,7 @@ img.scale-with-grid, #Content img {
 
 .title-categories h5{
     color: #fff;
-    font-size: 20px;
+    font-size: 24px;
     transition: .5s;
     font-weight: 800;
 }
