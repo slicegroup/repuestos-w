@@ -130,10 +130,7 @@
 
   .title-products {
     font-size: 23px;
-  }
-
-  .group-info {
-    margin-bottom: 15%;
+    line-height: 35px;
   }
 
   .recomendation {
@@ -142,6 +139,13 @@
 
   h2 {
     font-size: 23px;
+    line-height: 35px;
+    background: url(../img/line.png) no-repeat left 13px!important;
+  }
+
+  h4{
+    color: #fff;
+    width: auto;
   }
 
   .card-product{
@@ -159,20 +163,58 @@
     width: 100%;
   }
 
-  .slick-dots {
-    bottom: -5%;
+  .wrap.mcb-wrap.two-fifth.valign-middle.clearfix {
+    padding: 30px;
+    background-image: url(../img/red.jpg)!important;
+    background-repeat: no-repeat;
+    background-position: center left;
+    height: auto;
   }
-
   .team img{
     display: none;
   }
 
   .equal-height-wrap .mcb-wrap.valign-middle .mcb-wrap-inner {
     top: -10%;
+    transform: translateX(0);
   }
 
   .wrap.mcb-wrap.three-fifth.valign-middle.clearfix {
     height: auto;
+    padding: 10px;
+  }
+
+  .text-title h2{
+    width: auto;
+  }
+
+  .work{  
+    color: #000;
+    font-size: 22px;
+    line-height: 35px;
+    padding-left: 0px;
+    margin-top:200%;
+    background: url(../img/line.png) no-repeat left 30px!important;
+  }
+
+  .marcas{
+    padding-top: 115px;
+  }
+
+  .card-marcas img{
+    width: auto!important;
+  }
+
+  .card-marcas.slick-slide img{
+    width: 100%!important;
+  }
+
+  .marcas-flex > .slick-dotted.slick-slider {
+    height: 170px;
+  }
+
+  .btn-whatsapp i {
+    bottom: 10rem;
   }
 
   .re-flex{
