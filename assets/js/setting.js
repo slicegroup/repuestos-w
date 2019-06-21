@@ -71,7 +71,7 @@ $('.multiple-items-two').slick({
     speed: 500,
     infinite: true,
     slidesToShow: 6,
-    slidesToScroll: 1,
+    slidesToScroll: 6,
     arrows: false,
     dots: true,
     responsive: [
