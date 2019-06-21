@@ -66,14 +66,14 @@ $('.multiple-items').slick({
 });
 
 $('.multiple-items-two').slick({
-    autoplay: false,
+    autoplay: true,
     autoplaySpeed: 3000,
     speed: 500,
     infinite: true,
     slidesToShow: 6,
     slidesToScroll: 1,
     arrows: false,
-    dots: false,
+    dots: true,
     responsive: [
         {
             breakpoint: 700,

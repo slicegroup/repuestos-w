@@ -1103,16 +1103,16 @@ button.btn-primary.site-button.btn-block{
 }
 
 .work{
-    color: #000;
-        font-size: 30px;
+     color: #000;
+    font-size: 30px;
     line-height: 60px;
     font-weight: 600;
     letter-spacing: 0px;
-    background: url(../img/line.png) no-repeat left 25px!important;
+    background: url(../img/line.png) no-repeat left 93px!important;
     padding-left: 90px;
-        margin-top: 42%;
-    padding-top: 0%;
-        margin-left: 9%;
+    margin-top: 42%;
+    padding-top: 5%;
+    margin-left: 9%;
 }
 
 
@@ -1690,13 +1690,16 @@ p{
      cursor: pointer;
 }
 
-.marcas-flex{
+/* .marcas-flex{
     display: flex;
     justify-content: space-around;
     align-items: center;
     padding-bottom: 100px;
-}
+} */
 
+.marcas-flex > .slick-dotted.slick-slider{
+    height: 210px;
+}
 .card-marcas{
     position: relative;
 }
