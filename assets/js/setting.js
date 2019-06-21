@@ -38,7 +38,7 @@ $(".single-item-three").slick({
 });
 
 $('.multiple-items').slick({
-    autoplay: false,
+    autoplay: true,
     autoplaySpeed: 3000,
     speed: 500,
     infinite: true,
