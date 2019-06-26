@@ -20,12 +20,16 @@
   <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/slider.css">
   <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/style.css">
   <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/media.css">
+   <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/result.css">
+   <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/sorry.css">
+   <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/about.css">
+   <?php wp_head(); ?>
 </head>
 
 <body>
   <header class="header__main navbar-me container-fluid">
     <div class="logo">
-      <a href="index.html">
+      <a href="<?php bloginfo('url') ?>">
         <img class="logo" src="<?php echo get_template_directory_uri(); ?>/assets/img/logo.svg" alt="repuesto">
       </a>
     </div>
@@ -47,8 +51,9 @@
           <div class="search-icon">
             <i class="fa fa-search search-icon"></i>
           </div>
-          <form action="" class="search-form">
-            <input type="text" placeholder="Buscar" id="search" autocomplete="on" class="search">
+          <form action="<?php bloginfo('url') ?>" class="search-form">
+            <input type="text" placeholder="Buscar" id="search" name="s" autocomplete="on" class="search">
+
           </form>
           <!-- <svg class="search-border" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/"
             x="0px" y="0px" viewBox="0 0 671 111" style="enable-background:new 0 0 671 111;" xml:space="preserve">
@@ -61,10 +66,10 @@
         </div>
       </div>
       <div class="nav-item ">
-        <a class="item-color" href="">Inicio</a>
+        <a class="item-color" href="<?php bloginfo('url') ?>">Inicio</a>
       </div>
       <div class="nav-item">
-        <a class="item-color" href="#products">Productos</a>
+        <a class="item-color" href="<?php bloginfo('url') ?>/tienda">Productos</a>
       </div>
       <div class="nav-item">
         <a class="item-color" href="#recomendation">Recomendados</a>
@@ -73,7 +78,7 @@
         <a class="item-color" href="#contact">Contacto</a>
       </div>
       <div class="nav-item icon-plus ">
-        <i class="fa fa-cart-plus" aria-hidden="true"></i>
+      <a href="<?php bloginfo('url') ?>/carrito"> <i class="fa fa-cart-plus" aria-hidden="true"></i></a> 
       </div>
     </nav>
   </header>

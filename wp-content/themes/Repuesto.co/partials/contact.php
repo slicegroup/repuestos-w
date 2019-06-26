@@ -6,7 +6,7 @@
           ofertas y promociones</p>
         <div class="more-wiew ">
           <p>
-            <a href="about.html ">Leer más</a>
+            <a href="<?php bloginfo('url') ?>/about">Leer más</a>
           </p>
         </div>
       </div>

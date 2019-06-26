@@ -2,13 +2,17 @@
     <h2 class="title-products ">Repuestos en
       <span class="word-color ">stock</span> para despacho inmediato</h2>
     <div class="card-group ">
+             <<?php $args = array( 'post_type' => 'product', 'posts_per_page' => 8 ); ?>
+                 <?php $loop = new WP_Query( $args ); ?>
+
+                 <?php while ( $loop->have_posts() ) : $loop->the_post(); global $product; ?>
       <div class="card-product wow fadeInDown " style="visibility: visible; animation-name: fadeInDown; ">
         <div class="card-image ">
-          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/ejemplo_producto_1.jpg ">
+          <img src="<?php echo get_the_post_thumbnail_url(); ?> ">
         </div>
         <div class="display-flex ">
           <div class="price ">
-            <h5>$ 300.000</h5>
+            <h5><?php echo $product->get_price_html(); ?></h5>
           </div>
           <div class="price ">
             <span style="text-decoration:line-through; ">
@@ -17,13 +21,14 @@
           </div>
         </div>
 
+        
         <div class="group-info ">
           <div class="line ">
           </div>
           <div class="title-card ">
-            <a href=" ">
+            <a href="<?php the_permalink(); ?> ">
               <div class="flex-title ">
-                <h5>Clutch Valeo</h5>
+                <h5> <?php the_title(); ?></h5>
                 <i class="fa fa-cart-plus " aria-hidden="true "></i>
               </div>
               <h6>Chevrolet Spark</h6>
@@ -33,8 +38,10 @@
         </div>
 
       </div>
+ <?php endwhile; ?>
 
-      <div class="card-product wow fadeInDown ">
+
+     <!--  <div class="card-product wow fadeInDown ">
         <div class="card-image ">
           <img src="<?php echo get_template_directory_uri(); ?>/assets/img/ejemplo_producto_2.jpg ">
         </div>
@@ -241,11 +248,11 @@
           </div>
 
         </div>
-      </div>
+      </div> -->
 
     </div>
 
     <div class="btn-see ">
-      <button type="button " class="btn-primary site-button btn-block ">Ver más </button>
+      <a href="<?php bloginfo('url') ?>/tienda/" type="button " class="btn-shop ">Ver más </a>
     </div>
   </section>
