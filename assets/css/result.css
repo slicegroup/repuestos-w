@@ -1,8 +1,8 @@
 .header-img-four{
-  background-image: url('../img/banner.jpg');
+  background-image: url('../img/result.jpg');
   position: relative;
   background-attachment: fixed;
-  height: 360px;
+  height: 420px;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -70,6 +70,7 @@ select#sel1 {
 
 .card-product{
    padding-bottom: 100px;
+   max-height: 450px!important;
 }
 
 .dlab-feed-list .icon-box-btn {

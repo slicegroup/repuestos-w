@@ -38,7 +38,6 @@
 .g-recaptcha{
   transform: scale(0.84);
   transform-origin: 0 0;
-  margin-left: 55px;
 }
 
 .about p{
@@ -75,4 +74,8 @@
   font-weight: bold;
   color: white;
   position: absolute;
+}
+
+.btn-see-two{
+  padding-top: 0!important;
 }

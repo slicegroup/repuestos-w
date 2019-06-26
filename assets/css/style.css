@@ -1351,8 +1351,12 @@ img.scale-with-grid, #Content img {
   transition: .5s;
 }
 
-.card-image img {
-    width: inherit;
+.btn-primary.focus, .btn-primary:focus{
+    box-shadow: none;
+}
+
+.btn-primary:not(:disabled):not(.disabled).active:focus, .btn-primary:not(:disabled):not(.disabled):active:focus, .show>.btn-primary.dropdown-toggle:focus{
+    box-shadow: none;
 }
 
 .card{
@@ -1575,7 +1579,7 @@ h6{
   }
 
   .products{
-    padding: 130px 6% 80px;
+    padding: 175px 6% 80px;
     background: #fff;
     position: relative;
   }

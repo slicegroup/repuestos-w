@@ -97,8 +97,10 @@
     top: 25%;
     left: 0!important;
   }
-  .inner img{height: 80vh!important;}
-      
+
+  .inner img{
+    height: 80vh!important;
+  }
 
   .slick-next.slick-arrow{
     display: none!important;
@@ -221,6 +223,10 @@
     width: 100%;
   }
 
+  .group-result{
+    justify-content: center;
+  }
+
   .card-image-two img {
     width: 100%;
   }
@@ -283,7 +289,7 @@
   }
 
   .re-flex{
-    display: block;
+    display: block!important;
   }
 
   .g-recaptcha {
@@ -392,6 +398,22 @@ width: 100%;
     display: flex!important;
   }
 
+  .contact-container h3{
+    padding-top: 30%;
+  }
+
+  .re-flex{
+    display: block;
+  }
+
+  .about-page{
+    padding: 30px;
+  }
+
+  fieldset{
+    padding: 15px;
+  }
+
 
 }
 
@@ -419,5 +441,12 @@ width: 100%;
 
   .responsive-menu-btn>svg.open{
     fill: black;
+  }
+   .about-page{
+    padding: 30px;
+  }
+
+  fieldset{
+    padding: 27px;
   }
 }
