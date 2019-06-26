@@ -24,6 +24,7 @@ responsiveBtnIcon.addEventListener("click", () => {
   navMenu.classList.toggle("--is-open");
 });
 
+
 $(document).ready(function () {
   $('.ct-slick-homepage').on('init', function (event, slick) {
     $('.animated').addClass('activate fadeInUp');

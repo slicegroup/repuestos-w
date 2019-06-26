@@ -7,7 +7,7 @@
     -moz-animation: none !important;
     -o-animation: none !important;
     -ms-animation: none !important;
-    animation: none !important;
+    animation-name: none !important;
   }
 
   .logo {
@@ -26,6 +26,14 @@
 
   .nav-item a{
     color: black;
+  }
+
+  inner img {
+    height: 80vh;
+  }
+
+  .ct-u-display-tablex{
+    height: 80vh;
   }
 
   .responsive-menu-btn>svg.close{
@@ -51,6 +59,33 @@
     justify-content: flex-end;
   }
 
+  .nav-search-classi__section {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .nav-search-classi-content select {
+    width: 175px;
+  }
+
+  select#category__l2{
+        width: 180px!important;
+  }
+  .category-filter.category-dynamic {
+        width: 180px!important;
+          margin-left: 0px!important;
+    border-right: 1px solid #ccc;
+  }
+
+  .sec-one{
+    display: -webkit-inline-box;
+    display: -moz-inline-box;
+  }
+
+  .nav-search-classi__range-filter {
+    margin-left: 0px;
+  }
+
   #search{
     width: -webkit-fill-available;
     width: -moz-fill-available;
@@ -59,7 +94,11 @@
   .slider-inner{
     text-align: center;
     padding: 30px;
+    top: 25%;
+    left: 0!important;
   }
+  .inner img{height: 80vh!important;}
+      
 
   .slick-next.slick-arrow{
     display: none!important;
@@ -78,7 +117,11 @@
   }
 
   .products {
-    padding: 100px 6% 80px;
+    padding: 100px 6% 0px;
+  }
+
+  .slick-dotted.slick-slider {
+    margin-bottom: 30px;
   }
 
   form label{
@@ -120,8 +163,13 @@
   .group-two{
     width: auto;
   }
-  .text-footer h4 {
-    margin-bottom: 10%;
+
+  .text-footer h4{
+    color: #000;
+  }
+
+  .title-recommended {
+    margin-top: 10%;
   }
 
   .copy p{
@@ -129,7 +177,7 @@
   }
 
   .title-products {
-    font-size: 23px;
+    font-size: 20px;
     line-height: 35px;
   }
 
@@ -137,8 +185,20 @@
     padding: 30px 8% 80px;
   }
 
+   .ct-header h1.big {
+    font-size: 30px;
+  padding-top: 0!important}
+
+  .title-card h5 {
+    font-size: 18px;
+  }
+
+  .title-card h6 {
+    font-size: 16px;
+  }
+
   h2 {
-    font-size: 23px;
+    font-size: 20px;
     line-height: 35px;
     background: url(../img/line.png) no-repeat left 13px!important;
   }
@@ -148,10 +208,12 @@
     width: auto;
   }
 
-  .card-product{
-    width: 100%!important;
+  .card-group{
+    display: block!important;
+    flex-wrap: nowrap!important;
   }
 
+ 
   .pagination{
     justify-content: center;
   }
@@ -190,10 +252,11 @@
 
   .work{  
     color: #000;
-    font-size: 22px;
+    font-size: 20px;
     line-height: 35px;
     padding-left: 0px;
-    margin-top:200%;
+    margin-top: 190%;
+    margin-left: 2%;
     background: url(../img/line.png) no-repeat left 30px!important;
   }
 
@@ -212,6 +275,8 @@
   .marcas-flex > .slick-dotted.slick-slider {
     height: 170px;
   }
+
+ 
 
   .btn-whatsapp i {
     bottom: 10rem;
@@ -235,13 +300,25 @@
   }
 }
 
+@media screen and (min-width: 0px) and (max-width: 800px) {
+
+   .wow {
+    visibility: visible !important;
+    -webkit-animation: none !important;
+    -moz-animation: none !important;
+    -o-animation: none !important;
+    -ms-animation: none !important;
+    animation-name: none !important;
+  }
+}
+
 @media screen and (min-width: 768px) and (max-width: 991px){
  .search-box{
-    width: 165px;
+    width: 100%;
   }
 
     #search{
-    width: 165px;
+width: 100%;
 
   }
 
@@ -271,6 +348,51 @@
   left: 58rem;
   }
 
+  .team img{
+    display: none;
+  }
+
+  .wrap.mcb-wrap.three-fifth.valign-middle.clearfix {
+    padding: 315px 100px;
+  }
+
+  .equal-height-wrap .mcb-wrap.valign-middle .mcb-wrap-inner {
+    top: -122px;
+
+  }
+
+  .work{ 
+    margin-top: 85%;
+  } 
+
+  .card-marcas {
+    width: auto!important;
+  }
+
+  select#category__l2{
+    width: 210px!important;
+  }
+  .category-filter.category-dynamic {
+    width: 210px!important;
+    margin-left: 0px!important;
+    border-right: 1px solid #ccc;
+  }
+
+
+  .nav-search-classi__range-filter {
+    margin-left: 0px;
+  }
+
+  .nav-search-classi__section{
+    display: block;
+  }
+
+  .sec-one {
+    margin-left: 10px;
+    display: flex!important;
+  }
+
+
 }
 
 
@@ -284,6 +406,18 @@
 }
 
 @media screen and (min-width: 1024px) and (max-width: 1366px) {
+.wrap.mcb-wrap.three-fifth.valign-middle.clearfix {
+    padding: 125px 168px;
+  }
+   .equal-height-wrap .mcb-wrap.valign-middle .mcb-wrap-inner {
+    top: -50px;
+  }
+  .work{
+    margin-top: 60%;
+    background: url(../img/line.png) no-repeat left 80px!important;
+  }
 
- 
+  .responsive-menu-btn>svg.open{
+    fill: black;
+  }
 }

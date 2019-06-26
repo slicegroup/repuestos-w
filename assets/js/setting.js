@@ -50,7 +50,7 @@ $('.multiple-items').slick({
         {
             breakpoint: 700,
             settings: {
-                arrows: false,
+                arrows: true,
                 slidesToShow: 1,
                 slidesToScroll: 1
             }
@@ -78,7 +78,7 @@ $('.multiple-items-two').slick({
         {
             breakpoint: 700,
             settings: {
-                arrows: false,
+                arrows: true,
                 slidesToShow: 1,
                 slidesToScroll: 1
             }
