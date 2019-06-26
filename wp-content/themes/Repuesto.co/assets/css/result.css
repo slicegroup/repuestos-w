@@ -1,0 +1,104 @@
+.header-img-four{
+  background-image: url('../img/banner.jpg');
+  position: relative;
+  background-attachment: fixed;
+  height: 360px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.mask-item-img{
+  background: rgba(0, 0, 0, 0.3);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mask-item-img h3{
+  font-size: 50px;
+  font-weight: bold;
+  color: white;
+  position: absolute;
+}
+
+.bg-white{
+  padding-top: 85px;
+}
+
+.group-result{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 30px;
+}
+
+.search-filter{
+    display: flex;
+    justify-content:left;
+    width: 100%;
+    border:1px solid rgba(0, 0, 0, 0.1);
+    align-items: center;
+    align-content: center;
+    padding: 15px;
+}
+
+.form-group{
+      margin-bottom: 0!important;
+      margin-left: 10px;
+}
+
+.form-control{
+    border: 1px solid #e7ecf1!important;
+    background-color: #fff!important;
+    height: 40px;
+    color: grey;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+select#sel1 {
+    box-shadow: none!important;
+    outline: 0!important;
+}
+
+.card-product{
+   padding-bottom: 100px;
+}
+
+.dlab-feed-list .icon-box-btn {
+    background-color: #f4f4f4;
+}
+
+.icon-box-btn ul li {
+    border: 1px solid #dfdfdf;
+    display: inline-block;
+    float: left;
+    padding: 10px;
+    width: 50%;
+    font-size: 15px;
+    background: rgba(244, 244, 244, 0.32);
+}
+.m-tb20 {
+    margin-bottom: 20px;
+    margin-top: 20px;
+    width: 100%;
+}
+
+.page-link{
+  color: #d52a3f;
+  font-size: 15px;
+}
+
+.page-link:hover {
+    z-index: 2;
+    color: #000;
+    box-shadow: none;
+    background-color: #fff;
+}
