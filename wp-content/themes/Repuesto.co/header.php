@@ -22,6 +22,7 @@
   <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/media.css">
    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/result.css">
    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/sorry.css">
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/detail.css">
    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/about.css">
    <?php wp_head(); ?>
 </head>

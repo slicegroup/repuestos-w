@@ -213,6 +213,10 @@
     flex-wrap: nowrap!important;
   }
 
+  .father-about{
+    padding: 80px;
+  }
+
  
   .pagination{
     justify-content: center;
