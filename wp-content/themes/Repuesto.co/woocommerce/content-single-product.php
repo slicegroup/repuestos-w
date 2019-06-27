@@ -19,6 +19,7 @@ defined( 'ABSPATH' ) || exit;
 
 global $product;
 
+
 /**
  * Hook: woocommerce_before_single_product.
  *
@@ -34,7 +35,7 @@ if ( post_password_required() ) {
 
 <div class="header-img-four">
     <div class="mask-item-img">
-      <h3>Clutch Valeo</h3>
+      <h3><?php the_title(); ?></h3>
     </div>
   </div>
 
@@ -44,38 +45,15 @@ if ( post_password_required() ) {
       <div class="row no-gutters">
         <!--               picture product-->
         <div class="col-md-6">
-          <!-- <div class="row no-gutters w-100">
-                            
-            <div class="col-12 col-lg-10 flex-lg-last border-full-1px-solid border-color-a0">
-              <div class="d-flex justify-content-center align-items-center w-100 px-5">
-                <img src="https://dummyimage.com/400x600/e85de8/fff" class="img-fluid" id="main-image" style="max-height:600px;">
-              </div>
-            </div>
-        
-            <div class=" col-12 col-lg-2 flex-lg-first mb-md-0 mb-4" style="display:block">
-              <div class="row no-gutters ">
-
-                <div class="col-4 col-sm-3 col-lg-12 border-full-1px-solid border-color-a0 justify-content-center side-picture active" role="button"
-                  data-target="side-1">
-                  <div class="p-2 w-75">
-                    <img src="https://dummyimage.com/400x600/e85de8/fff" class="img-fluid ">
-                  </div>
-                </div>
-
-                <div class="col-4 col-sm-3 col-lg-12 border-full-1px-solid border-color-a0 justify-content-center side-picture" role="button"
-                  data-target="side-2">
-                  <div class="p-2 w-75">
-                    <img src="https://dummyimage.com/400x600/6e5fe6/fff" class="img-fluid ">
-                  </div>
-                </div>
-                <div class="col-4 col-sm-3 col-lg-12 border-full-1px-solid border-color-a0 justify-content-center side-picture" role="button"
-                  data-target="side-3">
-                  <div class="p-2 w-75">
-                    <img src="https://dummyimage.com/400x600/61e66c/fff" class="img-fluid ">
-                  </div>
-                </div>
-              </div>
-            </div> -->
+              <?php
+          /**
+           * Hook: woocommerce_before_single_product_summary.
+           *
+           * @hooked woocommerce_show_product_sale_flash - 10
+           * @hooked woocommerce_show_product_images - 20
+           */
+          do_action( 'woocommerce_before_single_product_summary' );
+          ?>
         </div>
 
         <!--                Options Product-->
@@ -84,7 +62,7 @@ if ( post_password_required() ) {
             <!--                       Judul-->
             <div class="mb-4 border-full-2px-solid border-top-0 border-left-0 border-right-0 border-color-inverse">
               <h6 class="text-muted font-size-08 text-uppercase ">Producto:</h6>
-              <h1>Clutch Valeo</h1>
+              <h1><?php the_title(); ?></h1>
             </div>
 
             <div class="mb-5 ">
@@ -94,7 +72,11 @@ if ( post_password_required() ) {
 
             <div class="mb-5 ">
               <h6 class="text-muted font-size-08 text-uppercase ">Categoria:</h6>
-              <h4>Repuesto electrico</h4>
+
+              
+                <h4><?php echo $product->get_categories( ', ', ' ' . _n( ' ', '  ', $cat_count, 'woocommerce' ) . ' ', ' ' ); ?></h4>
+          
+              
             </div>
             <div class="mb-4 border-full-2px-solid border-top-0 border-left-0 border-right-0 border-color-inverse">
               <h6 class="text-muted font-size-08 text-uppercase ">Año:</h6>
@@ -122,8 +104,7 @@ if ( post_password_required() ) {
 
       <!-- Tab panes -->
       <div class="tab-content">
-        <div class="tab-pane container active" id="home">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima autem possimus deserunt quidem quod, eius, asperiores
-          necessitatibus, ut doloremque enim quibusdam amet! Ipsum qui autem ratione fugiat consequuntur optio adipisci.</div>
+        <div class="tab-pane container active" id="home"><?php the_content(); ?></div>
         <div class="tab-pane container fade" id="menu1">hey</div>
 
       </div>
@@ -134,106 +115,42 @@ if ( post_password_required() ) {
       <span class="word-color ">relacionados</span>
     </h2>
     <div class="card-group">
-      <div class="card-product wow fadeInDown ">
+        <?php $args = array( 'post_type' => 'product', 'posts_per_page' => 4 ); ?>
+         <?php $loop = new WP_Query( $args ); ?>
+
+         <?php while ( $loop->have_posts() ) : $loop->the_post(); global $product; ?>
+      <div class="card-product wow fadeInDown " style="visibility: visible; animation-name: fadeInDown; ">
         <div class="card-image ">
-          <img src="assets/img/ejemplo_producto_2.jpg ">
+          <img src="<?php echo get_the_post_thumbnail_url(); ?> ">
         </div>
         <div class="display-flex ">
-          <div class="price cout ">
-            <h5>$ 350.000</h5>
+          <div class="price ">
+            <h5><?php echo $product->get_price_html(); ?></h5>
+          </div>
+          <div class="price ">
+            <span style="text-decoration:line-through; ">
+            </span>
           </div>
         </div>
 
+        
         <div class="group-info ">
           <div class="line ">
           </div>
           <div class="title-card ">
-            <a href=" ">
+            <a href="<?php the_permalink(); ?> ">
               <div class="flex-title ">
-                <h5>Pistones</h5>
+                <h5> <?php the_title(); ?></h5>
                 <i class="fa fa-cart-plus " aria-hidden="true "></i>
               </div>
-              <h6>Optra</h6>
-              <p>2010-2019</p>
+              <h6>Chevrolet Spark</h6>
+              <p>2016-2019</p>
             </a>
-          </div>
-        </div>
-      </div>
-      <div class="card-product wow fadeInDown ">
-        <div class="card-image ">
-          <img src="assets/img/ejemplo_producto_2.jpg ">
-        </div>
-        <div class="display-flex ">
-          <div class="price cout ">
-            <h5>$ 350.000</h5>
           </div>
         </div>
 
-        <div class="group-info ">
-          <div class="line ">
-          </div>
-          <div class="title-card ">
-            <a href=" ">
-              <div class="flex-title ">
-                <h5>Pistones</h5>
-                <i class="fa fa-cart-plus " aria-hidden="true "></i>
-              </div>
-              <h6>Optra</h6>
-              <p>2010-2019</p>
-            </a>
-          </div>
-        </div>
       </div>
-      <div class="card-product wow fadeInDown ">
-        <div class="card-image ">
-          <img src="assets/img/ejemplo_producto_2.jpg ">
-        </div>
-        <div class="display-flex ">
-          <div class="price cout ">
-            <h5>$ 350.000</h5>
-          </div>
-        </div>
-
-        <div class="group-info ">
-          <div class="line ">
-          </div>
-          <div class="title-card ">
-            <a href=" ">
-              <div class="flex-title ">
-                <h5>Pistones</h5>
-                <i class="fa fa-cart-plus " aria-hidden="true "></i>
-              </div>
-              <h6>Optra</h6>
-              <p>2010-2019</p>
-            </a>
-          </div>
-        </div>
-      </div>
-      <div class="card-product wow fadeInDown ">
-        <div class="card-image ">
-          <img src="assets/img/ejemplo_producto_2.jpg ">
-        </div>
-        <div class="display-flex ">
-          <div class="price cout ">
-            <h5>$ 350.000</h5>
-          </div>
-        </div>
-
-        <div class="group-info ">
-          <div class="line ">
-          </div>
-          <div class="title-card ">
-            <a href=" ">
-              <div class="flex-title ">
-                <h5>Pistones</h5>
-                <i class="fa fa-cart-plus " aria-hidden="true "></i>
-              </div>
-              <h6>Optra</h6>
-              <p>2010-2019</p>
-            </a>
-          </div>
-        </div>
-      </div>
+ <?php endwhile; ?>
     </div>
 
   </section>
@@ -283,7 +200,7 @@ if ( post_password_required() ) {
 
 
 
-<div class="container" id="product-<?php the_ID(); ?>" <?php wc_product_class( '', $product ); ?>>
+<div class="container" id="product-<?php the_ID(); ?>" style="display: none;" <?php wc_product_class( '', $product ); ?>>
 
 	<?php
 	/**
