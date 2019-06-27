@@ -15,7 +15,7 @@
                 <div class="row">
                   <div class=" slider-inner">
                     <h1 class="big animated"><?php the_title(); ?></h1>
-                    <h3 class="animated"><?php the_excerpt(); ?></h3>
+                    <h3 class="animated"><?php the_content(); ?></h3>
                     <a class="btn btn-transparent btn-lg text-uppercase animated" href="<?php the_permalink(); ?>">Solicitar</a>
                   </div>
                 </div>

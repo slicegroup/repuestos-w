@@ -638,7 +638,6 @@ position: relative;}
 .ct-header p {
 	font-size: 20px;
 	line-height: 1.1;
-	margin: 30px 0 40px;
 	color: #fff;
 }
 .btn {
@@ -1493,7 +1492,7 @@ img.scale-with-grid, #Content img {
 }
 
 .fa.fa-cart-plus{
-    color: #000!important;
+    color: #d52a3f!important;
     transition: .5s;
 }
 
@@ -1569,7 +1568,7 @@ h6{
 
   .card-group{
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     flex-wrap: wrap;
   }
@@ -1662,8 +1661,8 @@ h6{
 }
 
 .item p{
-  font-size: 15px;
-  color: #000;
+  font-size: 20px;
+  color: #fff;
   font-weight: 600;
 }
 

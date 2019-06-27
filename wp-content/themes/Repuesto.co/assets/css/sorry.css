@@ -20,9 +20,12 @@
 }
 
 .contact_header h4 {
-  font-size: 30px;
-  line-height: 1;
-  color: #fff;
+     display: flex;
+    font-size: 30px;
+    line-height: 1;
+    color: #fff;
+    justify-content: center;
+    width: auto!important;
 }
 
 .contact_header p {
@@ -201,6 +204,3 @@ input[type="email"]:invalid ~ .form-input-validation::after {
   content: 'Input format error';
 }
 
-.btn-see-two{
-  padding-top: 25px;
-}
