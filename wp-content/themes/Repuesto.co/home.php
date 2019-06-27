@@ -5,7 +5,6 @@
     <!--banner section end -->
  <?php  get_template_part('partials/widget'); ?>
 
-
   <?php  get_template_part('partials/product-stock'); ?>
 
 <?php  get_template_part('partials/lo-necesario'); ?>
