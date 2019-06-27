@@ -97,7 +97,11 @@
     top: 25%;
     left: 0!important;
   }
-  .inner img{height: 80vh!important;}
+
+  .inner img{
+    height: 80vh!important;
+    object-fit: cover;
+  }
       
 
   .slick-next.slick-arrow{
@@ -217,7 +221,10 @@
     padding: 80px;
   }
 
- 
+  .about-content{
+    padding: 45px;
+  }
+
   .pagination{
     justify-content: center;
   }
@@ -280,18 +287,16 @@
     height: 170px;
   }
 
- 
-
   .btn-whatsapp i {
     bottom: 10rem;
   }
 
   .re-flex{
-    display: block;
+    display: block!important;
   }
 
   .g-recaptcha {
-    margin-left: 0;
+    margin-left: 0!important;
     margin-top: 35px;
   }
 
@@ -322,8 +327,7 @@
   }
 
     #search{
-width: 100%;
-
+    width: 100%;
   }
 
   .logo {
@@ -349,7 +353,7 @@ width: 100%;
   }
 
   .img-back img{
-  left: 58rem;
+    left: 58rem;
   }
 
   .team img{
@@ -396,6 +400,18 @@ width: 100%;
     display: flex!important;
   }
 
+  .re-flex{
+    display: block!important;
+  }
+
+  .about-page{
+    padding: 30px;
+  }
+
+  fieldset{
+    padding: 15px!important;
+  }
+
 
 }
 
@@ -423,5 +439,17 @@ width: 100%;
 
   .responsive-menu-btn>svg.open{
     fill: black;
+  }
+
+  .about-page{
+    padding: 40px;
+  }
+
+  #contact_form {
+    margin: 0!important;
+  }
+
+  .re-flex{
+    display: block!important;
   }
 }

@@ -54,11 +54,11 @@
                     <textarea cols="40" rows="10" name="comment" id="comment" class="required"></textarea>
                   </div>
                   <div class="re-flex">
-                    <div class="btn-see-two flex">
-                      <button type="button" class="btn-primary site-button btn-block">Enviar </button>
-                    </div>
                     <div class="g-recaptcha" data-sitekey="clave-del-sitio">
-                    </div>
+                      </div>
+                        <div class="btn-see-two flex">
+                          <button type="button" class="btn-primary site-button btn-block">Enviar </button>
+                        </div>
                   </div>
               </fieldset>
             </form>

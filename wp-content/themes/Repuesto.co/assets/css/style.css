@@ -1516,6 +1516,7 @@ a{
 h6{
     font-size: 17px;
     margin-bottom: 10px;
+    color: #000;
 }
 
 .cout{
@@ -1568,7 +1569,7 @@ h6{
 
   .card-group{
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
   }
@@ -1586,7 +1587,7 @@ h6{
     letter-spacing: 0px;
     background: url('../img/line.png') no-repeat left 25px!important;
     padding-left: 90px;
-    margin-top: -8%;
+    margin-top: -4%;
     margin-bottom: 5%;
 }
 

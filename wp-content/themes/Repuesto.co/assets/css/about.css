@@ -15,7 +15,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 30px;
+  padding: 1px;
 }
 
 .about-content{
@@ -38,7 +38,6 @@
 .g-recaptcha{
   transform: scale(0.84);
   transform-origin: 0 0;
-  margin-left: 55px;
 }
 
 .about p{
