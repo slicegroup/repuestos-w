@@ -1,0 +1,11 @@
+2019-06-27T15:39:05+00:00 CRITICAL Uncaught Error: Call to undefined function get_the_category_wc() in /var/www/html/Repuesto.co/wp-content/themes/Repuesto.co/woocommerce/content-single-product.php:74
+Stack trace:
+#0 /var/www/html/Repuesto.co/wp-includes/template.php(724): require()
+#1 /var/www/html/Repuesto.co/wp-content/plugins/woocommerce/includes/wc-core-functions.php(195): load_template('/var/www/html/R...', false)
+#2 /var/www/html/Repuesto.co/wp-content/themes/Repuesto.co/woocommerce/single-product.php(36): wc_get_template_part('content', 'single-product')
+#3 /var/www/html/Repuesto.co/wp-includes/template-loader.php(78): include('/var/www/html/R...')
+#4 /var/www/html/Repuesto.co/wp-blog-header.php(19): require_once('/var/www/html/R...')
+#5 /var/www/html/Repuesto.co/index.php(17): require('/var/www/html/R...')
+#6 {main}
+  thrown en /var/www/html/Repuesto.co/wp-content/themes/Repuesto.co/woocommerce/content-single-product.php en la línea 74
+

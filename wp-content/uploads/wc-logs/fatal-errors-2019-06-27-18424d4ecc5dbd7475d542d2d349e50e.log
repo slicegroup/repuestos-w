@@ -1,0 +1,8 @@
+2019-06-27T13:54:22+00:00 CRITICAL Uncaught Error: Call to a member function get_price_html() on null in /var/www/html/Repuesto.co/wp-content/themes/Repuesto.co/search.php:21
+Stack trace:
+#0 /var/www/html/Repuesto.co/wp-includes/template-loader.php(78): include()
+#1 /var/www/html/Repuesto.co/wp-blog-header.php(19): require_once('/var/www/html/R...')
+#2 /var/www/html/Repuesto.co/index.php(17): require('/var/www/html/R...')
+#3 {main}
+  thrown en /var/www/html/Repuesto.co/wp-content/themes/Repuesto.co/search.php en la línea 21
+

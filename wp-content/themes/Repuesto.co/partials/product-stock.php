@@ -2,8 +2,9 @@
     <h2 class="title-products ">Repuestos en
       <span class="word-color ">stock</span> para despacho inmediato</h2>
     <div class="card-group ">
-      <?php $args = array( 'post_type' => 'product', 'posts_per_page' => 8 ); ?>
-          <?php $loop = new WP_Query( $args ); ?>
+
+             <?php $args = array( 'post_type' => 'product', 'posts_per_page' => 8 ); ?>
+                 <?php $loop = new WP_Query( $args ); ?>
 
           <?php while ( $loop->have_posts() ) : $loop->the_post(); global $product; ?>
           <a href="<?php the_permalink(); ?> ">
@@ -16,8 +17,10 @@
             <h5><?php echo $product->get_price_html(); ?></h5>
           </div>
           <div class="price ">
+
             <span style="text-decoration:line-through; color:black;">
               <h6>$ 300.000</h6>
+
             </span>
           </div>
         </div>
@@ -502,7 +505,6 @@
 
         </div>
       </div> -->
-
     </div>
 
     <div class="btn-see ">
