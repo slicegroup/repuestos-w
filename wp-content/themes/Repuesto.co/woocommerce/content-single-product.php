@@ -80,6 +80,8 @@ if ( post_password_required() ) {
             </div>
             <!--Button-->
             <div class="btn-see-two flex">
+							<div class="mb-4 border-full-2px-solid border-top-0 border-left-0 border-right-0 border-color-inverse">
+              <h6 class="text-muted font-size-08 text-uppercase ">Cantidad:</h6>
               <form class="cart" action="<?php echo esc_url( apply_filters( 'woocommerce_add_to_cart_form_action', $product->get_permalink() ) ); ?>" method="post" enctype='multipart/form-data'>
                 <?php do_action( 'woocommerce_before_add_to_cart_button' ); ?>
 
@@ -99,7 +101,7 @@ if ( post_password_required() ) {
 
                 <?php do_action( 'woocommerce_after_add_to_cart_button' ); ?>
               </form>
-            
+								</div>
             </div>
           </div>
         </div>

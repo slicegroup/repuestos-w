@@ -15,7 +15,7 @@
                   <div class=" slider-inner">
                     <h1 class="big animated"><?php the_title(); ?></h1>
                     <h3 class="animated"><?php the_content(); ?></h3>
-                    <a class="btn btn-transparent btn-lg text-uppercase animated" href="<?php the_permalink(); ?>">Solicitar</a>
+                    <a class="btn btn-transparent btn-lg text-uppercase animated" href="<?php the_permalink(); ?>">Cotizar</a>
                   </div>
                 </div>
               </div>
