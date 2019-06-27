@@ -698,6 +698,7 @@ outline: none !important;
     text-decoration: none;
     color: white;
     font-weight: 600;
+    font-family: 'Lato', sans-serif;
 }
 
 .nav-item a:after {
@@ -1090,7 +1091,38 @@ h2{
 
   .text-title h2{
     width: 395px;
-}  
+}
+
+.mb-5 h4{
+    font-size: 18px;
+}
+
+
+a {
+    color: #000;
+    transition: .5s;
+}
+
+a:hover {
+    color: #d52a3f;
+    transition: .5s;
+}
+
+.woocommerce-breadcrumb{
+    display: none!important;
+  }
+
+#sidebar{
+    display: none!important;
+}
+
+.pagenav{
+    display: none!important;
+}
+
+.categories{
+    display: none!important;
+}
 
 .color-word{
     color: black!important;
@@ -1477,6 +1509,11 @@ img.scale-with-grid, #Content img {
     display: flex;
     justify-content: flex-end;
     margin-right: 25px;
+    height: 30px;
+}
+
+.onsale{
+    display: none!important;
 }
 
 .line{

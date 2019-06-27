@@ -182,7 +182,10 @@
 
   .title-products {
     font-size: 20px;
-    line-height: 35px;
+  }
+
+  .nav-other {
+    margin: 2rem;
   }
 
   .recomendation {
@@ -210,6 +213,19 @@
   h4{
     color: #fff;
     width: auto;
+  }
+
+  .mb-4 h4{
+    color: #000;
+    font-size: 15px;
+  }
+
+  .pt-0.pr-2.pb-2.pl-1.pl-md-5 {
+    margin: 2rem;
+  }
+
+  .mb-5 h4 {
+    font-size: 15px;
   }
 
   .card-group{
@@ -267,7 +283,6 @@
     line-height: 35px;
     padding-left: 0px;
     margin-top: 190%;
-    margin-left: 2%;
     background: url(../img/line.png) no-repeat left 30px!important;
   }
 
@@ -412,7 +427,10 @@
     padding: 15px!important;
   }
 
-
+  .nav-other {
+    /* margin-left: 15px; */
+    margin: 2rem;
+  }
 }
 
 

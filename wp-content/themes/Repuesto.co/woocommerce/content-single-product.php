@@ -67,16 +67,12 @@ if ( post_password_required() ) {
 
             <div class="mb-5 ">
               <h6 class="text-muted font-size-08 text-uppercase ">Precio:</h6>
-              <h4>$ 194.000</h4>
+              <h1>$ 194.000</h1>
             </div>
 
             <div class="mb-5 ">
               <h6 class="text-muted font-size-08 text-uppercase ">Categoria:</h6>
-
-              
                 <h4><?php echo $product->get_categories( ', ', ' ' . _n( ' ', '  ', $cat_count, 'woocommerce' ) . ' ', ' ' ); ?></h4>
-          
-              
             </div>
             <div class="mb-4 border-full-2px-solid border-top-0 border-left-0 border-right-0 border-color-inverse">
               <h6 class="text-muted font-size-08 text-uppercase ">Año:</h6>
@@ -96,10 +92,6 @@ if ( post_password_required() ) {
         <li class="nav-other ">
           <a class="nav-link active" data-toggle="tab" href="#home">Descripción</a>
         </li>
-        <li class="nav-other">
-          <a class="nav-link" data-toggle="tab" href="#menu1">Detalles</a>
-        </li>
-
       </ul>
 
       <!-- Tab panes -->
@@ -119,6 +111,7 @@ if ( post_password_required() ) {
          <?php $loop = new WP_Query( $args ); ?>
 
          <?php while ( $loop->have_posts() ) : $loop->the_post(); global $product; ?>
+				 <a href="<?php the_permalink(); ?> ">
       <div class="card-product wow fadeInDown " style="visibility: visible; animation-name: fadeInDown; ">
         <div class="card-image ">
           <img src="<?php echo get_the_post_thumbnail_url(); ?> ">
@@ -132,28 +125,32 @@ if ( post_password_required() ) {
             </span>
           </div>
         </div>
-
-        
         <div class="group-info ">
           <div class="line ">
           </div>
           <div class="title-card ">
-            <a href="<?php the_permalink(); ?> ">
               <div class="flex-title ">
                 <h5> <?php the_title(); ?></h5>
                 <i class="fa fa-cart-plus " aria-hidden="true "></i>
               </div>
               <h6>Chevrolet Spark</h6>
               <p>2016-2019</p>
-            </a>
-          </div>
-        </div>
+						</div>
+					</div>
+				</a>
 
       </div>
  <?php endwhile; ?>
     </div>
 
   </section>
+<?php  get_template_part('partials/contact'); ?>
+  <div class="img-footer">
+    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/car-footer.svg" alt="">
+  </div>
+
+
+<?php get_footer(); ?>
 
 
 

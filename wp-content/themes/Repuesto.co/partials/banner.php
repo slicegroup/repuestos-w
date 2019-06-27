@@ -1,9 +1,8 @@
 
-    
   <section class='products-slider'>
     <div class="ct-header ct-header--slider ct-slick-custom-dots" id="home">
       <div class="ct-slick-homepage" data-arrows="true" data-autoplay="false">
-        <?php $args = array( 'post_type' => 'banner', 'posts_per_page' => 5); ?>   
+        <?php $args = array( 'post_type' => 'banner', 'posts_per_page' => 5); ?>
         <?php $loop = new WP_Query( $args ); ?>
          <?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
         <div class="ct-header tablex item">
@@ -24,5 +23,4 @@
           </div>
         </div>
  <?php endwhile; ?>
-        
   </section>
