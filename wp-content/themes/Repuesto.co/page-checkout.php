@@ -16,7 +16,7 @@
  */
 
 get_header(); ?>
-<div class="container">
+<div class="cart-check">
 	<?php echo do_shortcode('[woocommerce_checkout]'); ?>
 </div>
 

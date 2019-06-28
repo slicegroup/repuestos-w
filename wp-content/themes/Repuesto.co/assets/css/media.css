@@ -348,6 +348,25 @@
     display: initial!important;
   }
 
+  .detail-header{
+    max-width:100%!important;
+  }
+
+  .woocommerce-billing-fields {
+    display: block;
+  }
+  .woocommerce-billing-fields{
+  padding: 0;
+  }
+
+  .contact_header h4 {
+    font-size: 20px;
+  }
+
+  .only{
+    color: #000;
+  }
+
 }
 
 @media screen and (min-width: 0px) and (max-width: 800px) {
@@ -472,6 +491,15 @@
   .quantity{
     width: 100%!important;
   }
+
+  .detail-header{
+    max-width: 100%!important;
+  }
+
+  .woocommerce-billing-fields{
+    display: block;
+    padding-top: 45px;
+  }
 }
 
 
@@ -511,4 +539,7 @@
   .re-flex{
     display: block!important;
   }
+
+  
+
 }
