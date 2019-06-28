@@ -84,7 +84,9 @@ if ( post_password_required() ) {
             </div>
             <!--Button-->
             <div class="btn-see-two flex">
-              <form class="cart" action="<?php echo esc_url( apply_filters( 'woocommerce_add_to_cart_form_action', $product->get_permalink() ) ); ?>" method="post" enctype='multipart/form-data'>
+              <form class="cart" action="<?php echo esc_url( apply_filters( 'woocommerce_add_to_cart_form_action', $product->
+
+              get_permalink() ) ); ?>" method="post" enctype='multipart/form-data'>
                 <?php do_action( 'woocommerce_before_add_to_cart_button' ); ?>
 
                 <?php
