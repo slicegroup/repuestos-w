@@ -1505,6 +1505,8 @@ img.scale-with-grid, #Content img {
 }
 
 
+
+
 .price{
     display: flex;
     justify-content: flex-end;
@@ -1903,3 +1905,89 @@ font-weight: 400;
     background: #d52a3f!important;
 }
 
+.woocommerce-cart-form{
+    padding-top: 100px;
+}
+
+.woocommerce table.shop_table th{
+    font-size: 15px;
+}
+
+table.shop_table td {
+    font-size: 15px;
+}
+
+.woocommerce .quantity .qty {
+    width: 85px!important;
+}
+
+thead{
+    background: #d52a3f;
+    color: #fff;
+}
+
+.coupon{
+    display: flex;
+    flex-direction: column;
+}
+
+.woocommerce #content table.cart td.actions .input-text, .woocommerce table.cart td.actions .input-text, .woocommerce-page #content table.cart td.actions .input-text, .woocommerce-page table.cart td.actions .input-text {
+    width: 156px!important;
+}
+
+.woocommerce #respond input#submit, .woocommerce a.button, .woocommerce button.button, .woocommerce input.button {
+
+    color: #fff!important;
+    background-color: #d52a3f!important;
+    border: 0!important;
+    border: 3px solid #d52a3f!important;
+    padding: 10px 30px 10px 30px!important;
+    transition: .5s;
+    margin-top: 2%!important;
+}
+
+.button.button:hover{
+    border: 3px solid #d52a3f!important;
+    background: transparent!important;
+    color: #000!important;
+    transition: .5s;
+}
+
+.woocommerce .cart .button, .woocommerce .cart input.button {
+    font-weight: 300;
+}
+
+.woocommerce table.shop_table td {
+    border-top: 1px solid rgba(0,0,0,.1);
+    padding: 9px 20px;
+    vertical-align: middle;
+    line-height: 1.5em;
+}
+
+.actions{
+   padding: 20px!important;
+}
+
+.woocommerce .cart-collaterals .cart_totals, .woocommerce-page .cart-collaterals .cart_totals {
+    width: 50%!important;
+    padding:40px 70px 70px 70px;
+    float: none!important;
+}
+
+.woocommerce #respond input#submit.alt, .woocommerce a.button.alt, .woocommerce button.button.alt, .woocommerce input.button.alt {
+    font-size: 15px!important;
+}
+
+.only{
+    margin-bottom: 5%;
+}
+
+.woocommerce .cart-collaterals, .woocommerce-page .cart-collaterals {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.woocommerce #respond input#submit, .woocommerce a.button, .woocommerce button.button, .woocommerce input.button{
+    font-weight: 300!important;
+}
