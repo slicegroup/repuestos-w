@@ -32,9 +32,15 @@ if ( ! $checkout->is_registration_enabled() && $checkout->is_registration_requir
     <div class="mask-item-img">
       <h3><?php the_title(); ?></h3>
     </div>
-  </div>
-<form name="checkout" method="post" class="checkout woocommerce-checkout" action="<?php echo esc_url( wc_get_checkout_url() ); ?>" enctype="multipart/form-data">
+	</div>
 
+<form name="checkout" method="post" class="checkout woocommerce-checkout container" action="<?php echo esc_url( wc_get_checkout_url() ); ?>" enctype="multipart/form-data">
+	 <div class="contact_header detail-header container">
+		
+            <h4>Detalles de Facturación
+            </h4>
+					</div>
+			
 	<?php if ( $checkout->get_checkout_fields() ) : ?>
 
 		<?php do_action( 'woocommerce_checkout_before_customer_details' ); ?>
@@ -68,3 +74,7 @@ if ( ! $checkout->is_registration_enabled() && $checkout->is_registration_requir
 </form>
 
 <?php do_action( 'woocommerce_after_checkout_form', $checkout ); ?>
+<?php  get_template_part('partials/contact'); ?>
+  <div class="img-footer">
+    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/car-footer.svg" alt="">
+  </div>

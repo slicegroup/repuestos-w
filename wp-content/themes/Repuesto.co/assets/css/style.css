@@ -1947,7 +1947,7 @@ thead{
 }
 
 .button.button:hover{
-    border: 3px solid #d52a3f!important;
+
     background: transparent!important;
     color: #000!important;
     transition: .5s;
@@ -1968,10 +1968,31 @@ thead{
    padding: 20px!important;
 }
 
+.woocommerce-billing-fields__field-wrapper{
+        display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+}
 .woocommerce .cart-collaterals .cart_totals, .woocommerce-page .cart-collaterals .cart_totals {
     width: 50%!important;
     padding:40px 70px 70px 70px;
     float: none!important;
+}
+
+.woocommerce-additional-fields__field-wrapper{
+    display: none;
+}
+
+.woocommerce-billing-fields{
+    display: flex;
+    padding-bottom: 100px;
+    padding-top: 35px;
+    justify-content: center;
+
+}
+
+.select2-container--default .select2-selection--single .select2-selection__placeholder {
+    font-size: 15px; 
 }
 
 .woocommerce #respond input#submit.alt, .woocommerce a.button.alt, .woocommerce button.button.alt, .woocommerce input.button.alt {
@@ -1990,4 +2011,93 @@ thead{
 
 .woocommerce #respond input#submit, .woocommerce a.button, .woocommerce button.button, .woocommerce input.button{
     font-weight: 300!important;
+}
+
+.woocommerce-shipping-fields{
+    display: none!important;
+}
+
+.woocommerce-notice.woocommerce-notice--info.woocommerce-info{
+    display: none!important;
+}
+
+.woocommerce-info{
+    display: none!important;
+}
+
+.woocommerce-privacy-policy-text p{
+    font-size: 15px;
+}
+
+form.checkout.woocommerce-checkout.container {
+    padding-top: 100px;
+}
+
+.woocommerce form .form-row-first{
+    width: 100%!important;
+}
+
+.woocommerce form .form-row-last{
+    width: 100%!important;
+}
+
+.select2-container--default .select2-selection--single .select2-selection__rendered {
+
+    font-size: 15px;
+}
+
+.select2-container--default .select2-selection--single .select2-selection__placeholder{
+    color: #000!important;
+}
+
+#order_review_heading{
+    margin-bottom: 2%;
+    margin-top: 5%;
+}
+
+.detail-header{
+    max-width: 50%!important;
+}
+
+#billing_address_2{
+    display: none!important;
+}
+
+.select2-container--default .select2-selection--single .select2-selection__rendered {
+    color: #000;
+}
+
+.select2-container--default .select2-results__option--highlighted[aria-selected], .select2-container--default .select2-results__option--highlighted[data-selected] {
+    background-color: #d52a3f!important;
+    color: #fff;
+    font-size: 15px;
+}
+
+.woocommerce-input-wrapper{
+    width: 55%;
+}
+
+.select2-results__option[aria-selected], .select2-results__option[data-selected] {
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.woocommerce form .form-row {
+    padding-bottom: 15px!important;
+}
+
+.cart-products .woocommerce-error {
+    margin-top: 15%;
+    left: 380px;
+    width: 25%;
+}
+
+.woocommerce-billing-fields h3{
+    display: none;
+}
+
+.cart-check .woocommerce-error {
+    margin-top: 20%;
+    left: 533px;
+    width: 33%;
 }
