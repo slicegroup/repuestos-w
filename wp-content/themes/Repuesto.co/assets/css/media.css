@@ -97,7 +97,11 @@
     top: 25%;
     left: 0!important;
   }
-  .inner img{height: 80vh!important;}
+
+  .inner img{
+    height: 80vh!important;
+    object-fit: cover;
+  }
       
 
   .slick-next.slick-arrow{
@@ -178,7 +182,10 @@
 
   .title-products {
     font-size: 20px;
-    line-height: 35px;
+  }
+
+  .nav-other {
+    margin: 2rem;
   }
 
   .recomendation {
@@ -208,6 +215,19 @@
     width: auto;
   }
 
+  .mb-4 h4{
+    color: #000;
+    font-size: 15px;
+  }
+
+  .pt-0.pr-2.pb-2.pl-1.pl-md-5 {
+    margin: 2rem;
+  }
+
+  .mb-5 h4 {
+    font-size: 15px;
+  }
+
   .card-group{
     display: block!important;
     flex-wrap: nowrap!important;
@@ -217,7 +237,10 @@
     padding: 80px;
   }
 
- 
+  .about-content{
+    padding: 45px;
+  }
+
   .pagination{
     justify-content: center;
   }
@@ -260,7 +283,6 @@
     line-height: 35px;
     padding-left: 0px;
     margin-top: 190%;
-    margin-left: 2%;
     background: url(../img/line.png) no-repeat left 30px!important;
   }
 
@@ -280,18 +302,16 @@
     height: 170px;
   }
 
- 
-
   .btn-whatsapp i {
     bottom: 10rem;
   }
 
   .re-flex{
-    display: block;
+    display: block!important;
   }
 
   .g-recaptcha {
-    margin-left: 0;
+    margin-left: 0!important;
     margin-top: 35px;
   }
 
@@ -302,6 +322,32 @@
   .header-img-four{
     height: 290px;
   }
+
+  .tabs-info {
+    padding-bottom: 0px; 
+  }
+
+  button.button{
+    width: 100%!important;
+  }
+
+  .woocommerce #content table.cart td.actions .input-text, .woocommerce table.cart td.actions .input-text, .woocommerce-page #content table.cart td.actions .input-text, .woocommerce-page table.cart td.actions .input-text {
+    margin-bottom: 2%;
+  }
+
+  .woocommerce .cart-collaterals .cart_totals, .woocommerce-page .cart-collaterals .cart_totals{
+    width: 100%!important;
+    padding: 5px 0px 45px 0px;
+  }
+
+  .quantity{
+    width: 100%!important;
+  }
+
+  .woocommerce table.cart .product-thumbnail{
+    display: initial!important;
+  }
+
 }
 
 @media screen and (min-width: 0px) and (max-width: 800px) {
@@ -322,8 +368,7 @@
   }
 
     #search{
-width: 100%;
-
+    width: 100%;
   }
 
   .logo {
@@ -349,7 +394,7 @@ width: 100%;
   }
 
   .img-back img{
-  left: 58rem;
+    left: 58rem;
   }
 
   .team img{
@@ -396,7 +441,37 @@ width: 100%;
     display: flex!important;
   }
 
+  .re-flex{
+    display: block!important;
+  }
 
+  .about-page{
+    padding: 30px;
+  }
+
+  fieldset{
+    padding: 15px!important;
+  }
+
+  .nav-other {
+    /* margin-left: 15px; */
+    margin: 2rem;
+  }
+
+  .woocommerce .cart-collaterals .cart_totals{
+    width: 48%;
+  }
+   .woocommerce table.cart td.actions .button{
+    width: 48%!important;
+  }
+
+  .woocommerce table.cart td.actions .input-text{
+    width: 319px!important;
+  }
+
+  .quantity{
+    width: 100%!important;
+  }
 }
 
 
@@ -423,5 +498,17 @@ width: 100%;
 
   .responsive-menu-btn>svg.open{
     fill: black;
+  }
+
+  .about-page{
+    padding: 40px;
+  }
+
+  #contact_form {
+    margin: 0!important;
+  }
+
+  .re-flex{
+    display: block!important;
   }
 }

@@ -15,7 +15,6 @@
       $product_categories = get_terms('product_cat', $args);
 
       foreach ($product_categories as $product_category) { ?>
-                
          <?php $thumbnail_id = get_woocommerce_term_meta($product_category->term_id, 'thumbnail_id', true);
           $images = wp_get_attachment_image_src($thumbnail_id, 'medium'); ?>
               <div class="card wow fadeInDown " style="visibility: visible; animation-name: fadeInDown; ">
@@ -27,14 +26,13 @@
                       </div>
                     </a>
                   </div>
+                  <?php var_dump($product_categories); ?>
                   <img src="<?php echo $images[0]; ?>">
                 </div>
               </div>
        <?php
-
               }
             ?>
-
       </div>
     </div>
   </section>

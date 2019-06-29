@@ -19,11 +19,11 @@
   <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/slick-theme.css">
   <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/slider.css">
   <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/style.css">
+  <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/result.css">
+  <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/sorry.css">
+  <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/detail.css">
+  <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/about.css">
   <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/media.css">
-   <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/result.css">
-   <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/sorry.css">
-    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/detail.css">
-   <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/about.css">
    <?php wp_head(); ?>
 </head>
 
@@ -73,7 +73,7 @@
         <a class="item-color" href="<?php bloginfo('url') ?>/tienda">Productos</a>
       </div>
       <div class="nav-item">
-        <a class="item-color" href="#recomendation">Recomendados</a>
+        <a class="item-color" href="#recomendation">Cotización</a>
       </div>
       <div class="nav-item ">
         <a class="item-color" href="#contact">Contacto</a>

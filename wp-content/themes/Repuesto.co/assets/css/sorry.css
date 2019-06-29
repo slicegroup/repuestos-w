@@ -67,9 +67,12 @@
 }
 
 form {
-  margin: 0px auto;
   color: #2F363A;
   max-width: 500px;
+}
+
+.quantify{
+  padding-bottom: 25px;
 }
 
 textarea{
