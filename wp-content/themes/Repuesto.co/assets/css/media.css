@@ -222,6 +222,7 @@
 
   .pt-0.pr-2.pb-2.pl-1.pl-md-5 {
     margin: 2rem;
+    padding-top: 45%!important;
   }
 
   .mb-5 h4 {
@@ -250,6 +251,20 @@
 
   .card-image-two img {
     width: 100%;
+  }
+
+  .flex-control-nav {
+    list-style: none;
+    width: 20%;
+    position: absolute;
+    right: 55%;
+    display: flex;
+    margin-top: 10%;
+    top: 100%;
+  }
+
+  .tabs-info{
+    padding-top: 0;
   }
 
   .wrap.mcb-wrap.two-fifth.valign-middle.clearfix {
@@ -284,6 +299,10 @@
     padding-left: 0px;
     margin-top: 190%;
     background: url(../img/line.png) no-repeat left 30px!important;
+  }
+
+  .flex-viewport img {
+    height: 100%;
   }
 
   .marcas{
@@ -367,6 +386,25 @@
     color: #000;
   }
 
+  .check-flex {
+    display: flex;
+    justify-content: center;
+    width: auto;
+    border: 1px solid #D1D1D1;
+    padding: 20px;
+  }
+
+  .woocommerce form .form-row {
+    display: block;
+  }
+
+ .woocommerce-checkout #payment div.form-row {
+    padding: 3em!important;
+  }
+
+  .woocommerce-error {
+    margin: 5px 5px 40px 5px!important;
+  }
 }
 
 @media screen and (min-width: 0px) and (max-width: 800px) {
@@ -500,6 +538,24 @@
     display: block;
     padding-top: 45px;
   }
+
+  .flex-control-nav {
+    list-style: none;
+    height: 40rem;
+    top: 70%;
+    width: 20%;
+    position: absolute;
+    display: flex;
+    right: 80%;
+  }
+
+  .check-flex {
+    width: 100%;
+  }
+
+  .woocommerce .cart-collaterals .cart_totals{
+    width: 100%!important;
+  }
 }
 
 
@@ -541,5 +597,8 @@
   }
 
   
+  .woocommerce .cart-collaterals .cart_totals{
+    width: 100%!important;
+  }
 
 }

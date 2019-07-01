@@ -1,3 +1,8 @@
+<div class="header-img-four">
+    <div class="mask-item-img">
+      <h3><?php the_title(); ?></h3>
+    </div>
+  </div>
 <?php
 /**
  * The template for displaying product content in the single-product.php template
@@ -33,11 +38,6 @@ if ( post_password_required() ) {
 }
 ?>
 
-<div class="header-img-four">
-    <div class="mask-item-img">
-      <h3><?php the_title(); ?></h3>
-    </div>
-  </div>
 
   <section class="details">
     <div class="container">
