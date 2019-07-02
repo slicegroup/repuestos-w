@@ -123,6 +123,10 @@
     color: black;
   }
 
+  .phone{
+    display: block!important;
+  }
+
   .nav__menu{
     top: 78px;
   }
@@ -318,6 +322,7 @@
 
   .card-marcas img{
     width: auto!important;
+    filter: none;
   }
 
   .card-marcas.slick-slide img{
@@ -576,16 +581,11 @@
 }
 
 @media screen and (min-width: 1024px) and (max-width: 1366px) {
-.wrap.mcb-wrap.three-fifth.valign-middle.clearfix {
-    padding: 125px 168px;
-  }
+
    .equal-height-wrap .mcb-wrap.valign-middle .mcb-wrap-inner {
     top: -50px;
   }
-  .work{
-    margin-top: 60%;
-    background: url(../img/line.png) no-repeat left 80px!important;
-  }
+
 
   .responsive-menu-btn>svg.open{
     fill: black;

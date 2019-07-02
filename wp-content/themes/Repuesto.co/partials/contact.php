@@ -18,7 +18,7 @@
     <div class="group-two ">
       <div class="text-footer ">
         <h4>Contáctanos</h4>
-        <div class="redes ">
+        <div class="redes phone ">
           <i class="fa fa-phone "></i>
           <p class="number ">+57 (0) 3 8376 6284, </p>
           <p class="number "> +57 (0) 3 8376 6284</p>
