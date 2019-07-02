@@ -16,7 +16,7 @@
           </div>
           <div class="price ">
             <span style="text-decoration:line-through; color:black;">
-              <h6>$ 300.000</h6>
+              <!-- <h6>$ 300.000</h6> -->
             </span>
           </div>
         </div>
@@ -34,7 +34,6 @@
           </div>
       </div> 
       </a>
-     
  <?php endwhile; ?>
  </section>
 <!---****************************CARDS RESPOSNIVE CARRUSEL ****************************-->

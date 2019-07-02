@@ -1492,7 +1492,7 @@ img.scale-with-grid, #Content img {
 
 
 .card-product:hover .price h5  {
-    color: #000;
+    color: #d52a3f;
     text-decoration: none;
     cursor: pointer;
     transition: .5s;
@@ -1501,13 +1501,11 @@ img.scale-with-grid, #Content img {
 
 .price h5{
     transition: .5s;
-    color: #d52a3f;
+    color: #000;
     font-weight: bold;
     font-size: 20px;
+    display: grid;
 }
-
-
-
 
 .price{
     display: flex;
@@ -1589,14 +1587,14 @@ h6{
     font-size: 17px;
     margin: 20px;
     margin: 20px 5px -11px 20px;
-     font-weight: 600;
+     font-weight: 300;
      color: #000;
 }
 
 .title-card p{
     font-size: 15px;
     color: #d52a3f;
-    font-weight: 600;
+    font-weight: 300;
     margin: 20px;
 }
 
@@ -2207,3 +2205,4 @@ form.woocommerce-cart-form.container {
 .flex-active {
     border: 3px solid #d52a3f!important;
 }
+

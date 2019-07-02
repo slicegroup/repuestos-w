@@ -62,7 +62,7 @@
 }
 
 .products-relation{
-  padding: 130px 6% 80px;
+  padding: 50px 6% 80px;
 }
 
 img.wp-post-image {
@@ -77,9 +77,9 @@ img.wp-post-image {
 }
 
 .single_add_to_cart_button.button.alt.btn-shop:hover{
-    background: #fff!important;
-    color: #000!important;
-    transition: .5s;
+  background: #fff!important;
+  color: #000!important;
+  transition: .5s;
 }
 
 

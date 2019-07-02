@@ -69,17 +69,24 @@
   }
 
   select#category__l2{
-        width: 180px!important;
+        width: 100%!important;
   }
   .category-filter.category-dynamic {
-        width: 180px!important;
+        width: 100%!important;
           margin-left: 0px!important;
     border-right: 1px solid #ccc;
   }
 
-  .sec-one{
-    display: -webkit-inline-box;
-    display: -moz-inline-box;
+  .this-one{
+      width: 100%;
+  }
+
+  .this-other{
+      width: 100%;
+  }
+
+  .sec-one {
+    margin-left: 0;
   }
 
   .nav-search-classi__range-filter {
