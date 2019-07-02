@@ -5,7 +5,7 @@
 
     <div class="nav-search-classi-content">
       <div class="nav-search-classi__section sec-one">
-        <div>
+        <div class="this-one">
           <select id="category__l2" name="9991744-AMCO_1744_1" class="category-filter category-dynamic" tabindex="11" style="display: block; width: 421px; ">
             <option value=" ">Todas las marcas</option>
             <option value="9991744-AMCO_1744_1-MMCO16035 ">Acura</option>
@@ -94,7 +94,7 @@
             <option value="9991744-AMCO_1744_1-MMCO18979 ">Zotye</option>
           </select>
         </div>
-        <div>
+        <div class="this-other">
           <select id="category__l3 " name="category__l3 " class="category-filter category-dynamic " tabindex="12
             " disabled=" " style="display: block; width: 421px;  margin-left: 10px;">
             <option value=" ">Todos los modelos</option>

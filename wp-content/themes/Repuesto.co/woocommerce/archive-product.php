@@ -33,9 +33,7 @@ do_action( 'woocommerce_before_main_content' );
     <h2 class="title-products " style="margin-top: 50px;">Repuestos en
       <span class="word-color ">stock</span> para despacho inmediato</h2>
     <div class="card-group ">
-             
-
-                 <?php while ( have_posts() ) : the_post(); global $product; ?>
+      <?php while ( have_posts() ) : the_post(); global $product; ?>
       <div class="card-product wow fadeInDown " style="visibility: visible; animation-name: fadeInDown; ">
         <div class="card-image ">
           <img src="<?php echo get_the_post_thumbnail_url(); ?> ">
@@ -49,8 +47,6 @@ do_action( 'woocommerce_before_main_content' );
             </span>
           </div>
         </div>
-
-        
         <div class="group-info ">
           <div class="line ">
           </div>
@@ -65,12 +61,9 @@ do_action( 'woocommerce_before_main_content' );
             </a>
           </div>
         </div>
-
       </div>
     <?php endwhile; ?>
     </div>
   </section>
-
 <?php
-
 get_footer( 'shop' ); ?>

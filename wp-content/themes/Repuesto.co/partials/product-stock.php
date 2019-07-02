@@ -33,7 +33,6 @@
           </div>
       </div> 
       </a>
-     
  <?php endwhile; ?>
  </section>
 <!---****************************CARDS RESPOSNIVE CARRUSEL ****************************-->
