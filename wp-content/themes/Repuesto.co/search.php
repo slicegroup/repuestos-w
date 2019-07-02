@@ -8,9 +8,7 @@ get_header();
       </div>
     </div>
  <section class="products d-none d-sm-block " id="products " style="padding-top: 100px;">
-    
     <div class="card-group ">
-           
    <?php  while ( have_posts() ) : the_post(); global $product; ?>
       <div class="card-product wow fadeInDown " style="visibility: visible; animation-name: fadeInDown; ">
         <div class="card-image ">
@@ -26,8 +24,6 @@ get_header();
             </span>
           </div>
         </div>
-
-        
         <div class="group-info ">
           <div class="line ">
           </div>
@@ -44,7 +40,7 @@ get_header();
         </div>
 
       </div>
- <?php endwhile; 
+ <?php endwhile;
 else:
  ?>
  <section class="contact-container">
@@ -117,14 +113,8 @@ else:
   </div>
 
 <?php endif; ?>
-
     </div>
-
-   
   </section>
-
-
-
 <?php
 get_footer();
 ?>

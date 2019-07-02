@@ -1,5 +1,4 @@
 <section id="about " class="about ">
-
     <div class="section mcb-section equal-height-wrap no-margin-h full-width " style="padding-top:0px; padding-bottom:0px;
             background-color:#f1f2f6 ">
       <div class="section_wrapper mcb-section-inner ">
@@ -65,6 +64,6 @@
         </div>
       </div>
     </div>
-    </div>
-    </div>
+    <!-- </div>
+    </div> -->
   </section>

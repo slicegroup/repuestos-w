@@ -1156,7 +1156,7 @@ button.btn-primary.site-button.btn-block{
     letter-spacing: 0px;
     background: url(../img/line.png) no-repeat left 95px!important;
     padding-left: 90px;
-    /* margin-top: 42%; */
+    margin-top: 42%;
     padding-top: 5%;
     margin-left: 9%;
 }
@@ -1380,6 +1380,8 @@ img.scale-with-grid, #Content img {
   margin-bottom: 39px;
   overflow: hidden;
   transition: .5s;
+  position: relative;
+  z-index: 99;
 }
 
 .card-image img {
