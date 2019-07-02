@@ -123,6 +123,10 @@
     color: black;
   }
 
+  .phone{
+    display: block!important;
+  }
+
   .nav__menu{
     top: 78px;
   }
@@ -318,6 +322,7 @@
 
   .card-marcas img{
     width: auto!important;
+    filter: none;
   }
 
   .card-marcas.slick-slide img{
