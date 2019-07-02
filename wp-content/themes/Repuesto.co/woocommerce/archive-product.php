@@ -46,7 +46,6 @@ do_action( 'woocommerce_before_main_content' );
           </div>
           <div class="price ">
             <span style="text-decoration:line-through; ">
-              <h6>$ 300.000</h6>
             </span>
           </div>
         </div>

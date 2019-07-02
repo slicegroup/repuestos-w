@@ -26,7 +26,6 @@
                       </div>
                     </a>
                   </div>
-                  <?php var_dump($product_categories); ?>
                   <img src="<?php echo $images[0]; ?>">
                 </div>
               </div>
