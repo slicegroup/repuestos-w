@@ -9,7 +9,8 @@
 <?php  get_template_part('partials/about'); ?>
 <?php  get_template_part('partials/repuestos'); ?>
 <?php  get_template_part('partials/contact'); ?>
-<?php get_footer(); ?>
+
+<?php get_footer(); ?> 
 
 
 

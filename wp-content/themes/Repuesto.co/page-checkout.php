@@ -19,5 +19,6 @@ get_header(); ?>
 <div class="cart-check">
 	<?php echo do_shortcode('[woocommerce_checkout]'); ?>
 </div>
-
+ 
+ 
 <?php get_footer();?>

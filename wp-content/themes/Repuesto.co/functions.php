@@ -31,6 +31,7 @@ add_action( 'widgets_init', 'student_widgets_init' );
 
 
 
+
 // Register Custom Post Type
 function Banner() {
 

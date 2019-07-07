@@ -28,6 +28,7 @@
 </head>
 
 <body>
+  
   <header class="header__main navbar-me container-fluid">
     <div class="logo">
       <a href="<?php bloginfo('url') ?>">
